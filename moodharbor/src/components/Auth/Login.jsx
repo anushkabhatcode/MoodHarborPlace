@@ -39,7 +39,7 @@ const Login = () => {
       if(validateInputs()){
 
         try{
-          const response = await fetch('/login', {
+          const response = await fetch('/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
